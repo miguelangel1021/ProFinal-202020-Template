@@ -1,1 +1,1 @@
-En este directorio van los documentos explicativos del proyecto
+En este directorio van los datos de prueba de los proyectos

@@ -38,9 +38,16 @@ def newEdge(va, vb, weight=0):
     """
     edge = {'vertexA': va,
             'vertexB': vb,
-            'weight': weight
+            'weight': weight,
+            "count":0
             }
     return edge
+
+def updateAverageWeigth(edge,weight):
+    
+    newweight= (edge["weight"]*edge["count"]+ weight)/(edge["count"]+1)
+    edge["weight"]=newweight
+    edge["count"]+=1
 
 
 def weight(edge):
